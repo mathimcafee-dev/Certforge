@@ -1,0 +1,28 @@
+{
+  "name": "certforge",
+  "version": "1.0.0",
+  "description": "Offline certificate format studio: convert certificate, key and CA bundle into PFX, JKS, PEM, DER, P7B and server-ready packs. One HTML file, nothing leaves your computer.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:library": "node scripts/build-library.mjs",
+    "test": "node --test test/roundtrip.test.mjs",
+    "test:browser": "node test/browser.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathimcafee-dev/Certforge.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mathimcafee-dev/Certforge/issues"
+  },
+  "homepage": "https://github.com/mathimcafee-dev/Certforge#readme",
+  "dependencies": {
+    "node-forge": "^1.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "type": "module",
+  "private": true
+}

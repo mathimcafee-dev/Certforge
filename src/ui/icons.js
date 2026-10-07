@@ -1,0 +1,22 @@
+const s = (vb, body, cls = 'icon', extra = '') => `<svg class="${cls}" viewBox="${vb}" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${body}</svg>`;
+export const I = {
+  chain: s('0 0 24 24', '<path d="M9.5 14.5l5-5"/><path d="M11 6.5l1.6-1.6a4 4 0 015.6 5.6L16.6 12"/><path d="M13 17.5l-1.6 1.6a4 4 0 01-5.6-5.6L7.4 12"/>', 'icon', 'stroke-width="2.4" style="width:18px;height:18px"'),
+  check: s('0 0 12 12', '<path d="M2.5 6.3l2.3 2.3 4.7-5"/>', '', 'stroke-width="2.2"'),
+  x: s('0 0 12 12', '<path d="M3 3l6 6M9 3l-6 6"/>', '', 'stroke-width="2.2" width="12" height="12"'),
+  bang: s('0 0 12 12', '<path d="M6 2.5v4.2M6 9.3v.1"/>', '', 'stroke-width="2.2"'),
+  joint: '<svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 0v22"/></svg>',
+  dl: s('0 0 16 16', '<path d="M8 2v8M4.5 6.8L8 10.3l3.5-3.5M2.5 13.5h11"/>', 'icon', 'stroke-width="1.8"'),
+  dice: s('0 0 16 16', '<rect x="2.5" y="2.5" width="11" height="11" rx="2.5"/><circle cx="6" cy="6" r=".9" fill="currentColor"/><circle cx="10" cy="10" r=".9" fill="currentColor"/><circle cx="10" cy="6" r=".9" fill="currentColor"/><circle cx="6" cy="10" r=".9" fill="currentColor"/>', 'icon', 'stroke-width="1.7"'),
+  clock: s('0 0 16 16', '<circle cx="8" cy="8" r="6"/><path d="M8 4.8V8l2.2 1.4"/>', 'icon', 'stroke-width="1.7"'),
+  file: s('0 0 16 16', '<path d="M4 1.8h5.2L12.5 5v9.2H4z"/><path d="M9 1.8V5h3.5"/>', 'icon', 'stroke-width="1.6"'),
+  zip: s('0 0 16 16', '<rect x="2.5" y="2" width="11" height="12" rx="2"/><path d="M8 2v2M8 5v1.5M8 7.5V9"/>', 'icon', 'stroke-width="1.6"'),
+  lock: s('0 0 16 16', '<rect x="3" y="7" width="10" height="7" rx="2"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2"/>', 'icon', 'stroke-width="1.6"'),
+  noWifi: s('0 0 16 16', '<path d="M2 6a9 9 0 0112 0M4.3 8.5a5.6 5.6 0 017.4 0M6.6 11a2.2 2.2 0 012.8 0"/><path d="M2 2l12 12"/>', 'icon', 'stroke-width="1.6" style="width:18px;height:18px"'),
+  bolt: s('0 0 16 16', '<path d="M9 1.5L3.5 9H8l-1 5.5L12.5 7H8z"/>', 'icon', 'stroke-width="1.6" style="width:18px;height:18px"'),
+  plus: s('0 0 24 24', '<path d="M12 5v14M5 12h14"/>', '', 'stroke-width="2.2" width="30" height="30"'),
+  sun: s('0 0 16 16', '<circle cx="8" cy="8" r="3"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3 3l1 1M12 12l1 1M3 13l1-1M12 4l1-1"/>', 'icon', 'stroke-width="1.6"'),
+  moon: s('0 0 16 16', '<path d="M13.5 9.5A5.5 5.5 0 016.5 2.5a5.5 5.5 0 107 7z"/>', 'icon', 'stroke-width="1.6"'),
+  auto: s('0 0 16 16', '<circle cx="8" cy="8" r="6"/><path d="M8 2v12" /><path d="M8 2a6 6 0 010 12z" fill="currentColor"/>', 'icon', 'stroke-width="1.6"'),
+  copy: s('0 0 16 16', '<rect x="5" y="5" width="8.5" height="8.5" rx="1.8"/><path d="M3 10.5V3.8C3 3.4 3.4 3 3.8 3h6.7"/>', 'icon', 'stroke-width="1.6"'),
+  paste: s('0 0 16 16', '<rect x="3" y="2.8" width="10" height="11.5" rx="2"/><path d="M6 2.8h4v2H6z"/>', 'icon', 'stroke-width="1.6"'),
+};
